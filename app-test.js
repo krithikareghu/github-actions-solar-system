@@ -95,7 +95,7 @@ describe('Planets API Suite', () => {
               .end((err, res) => {
                     res.should.have.status(200);
                     res.body.should.have.property('id').eql(6);
-                    res.body.should.have.property('name').eql('Saturn-jjn');
+                    res.body.should.have.property('name').eql('Saturn');
                 done();
               });
         });
@@ -110,7 +110,7 @@ describe('Planets API Suite', () => {
               .end((err, res) => {
                     res.should.have.status(200);
                     res.body.should.have.property('id').eql(7);
-                    res.body.should.have.property('name').eql('Uranus-jnf');
+                    res.body.should.have.property('name').eql('Uranus');
                 done();
               });
         });
